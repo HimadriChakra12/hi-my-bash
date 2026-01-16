@@ -27,6 +27,9 @@ package-manager
 plugins=(
 git
 bashmarks
+zoxide
+starship
+fzf
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.hi-my-bash/plugins/*)
