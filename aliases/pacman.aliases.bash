@@ -54,3 +54,5 @@ if _omb_util_binary_exists yay; then
   alias yu="${_omb_tmp_sudo}yay -Syu" # Enoch Update & Upgrade System
   alias yI="${_omb_tmp_sudo}yay -Si" # Enoch Display Information
 fi
+
+unset -v _omb_tmp_sudo
