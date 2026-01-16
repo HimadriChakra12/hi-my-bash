@@ -67,7 +67,6 @@ function _omb_module_require {
     plugin)     locations=({"$OSH_CUSTOM","$OSH"}/plugins/"$name"/"$name".plugin.{bash,sh}) ;;
     alias)      locations=({"$OSH_CUSTOM","$OSH"}/aliases/"$name".aliases.{bash,sh}) ;;
     completion) locations=({"$OSH_CUSTOM","$OSH"}/completions/"$name".completion.{bash,sh}) ;;
-    theme)      locations=({"$OSH_CUSTOM"{,/themes},"$OSH"/themes}/"$name"/"$name".theme.{bash,sh}) ;;
     *)
       printf '%s\n' "oh-my-bash (module_require): unknown module type '$type'." >&2
       status=2
@@ -91,10 +90,6 @@ function _omb_module_require {
     local i
     for i in "${!files[@]}"; do
       local path=${files[i]} module=${modules[i]}
-      if [[ $module != theme:* ]]; then
-        [[ ' '$_omb_module_loaded' ' == *" $module "* ]] && continue
-        _omb_module_loaded="$_omb_module_loaded $module"
-      fi
       source "$path" || status=$?
     done
   fi
@@ -106,7 +101,6 @@ function _omb_module_require_lib        { _omb_module_require "${@/#/lib:}"; }
 function _omb_module_require_plugin     { _omb_module_require "${@/#/plugin:}"; }
 function _omb_module_require_alias      { _omb_module_require "${@/#/alias:}"; }
 function _omb_module_require_completion { _omb_module_require "${@/#/completion:}"; }
-function _omb_module_require_theme      { _omb_module_require "${@/#/theme:}"; }
 
 # Load all of the config files in ~/.oh-my-bash/lib that end in .sh
 # TIP: Add files you don't want in git to .gitignore
@@ -143,11 +137,6 @@ for _omb_init_file in "${_omb_init_files[@]}"; do
     source "$_omb_init_file"
 done
 unset -v _omb_init_files _omb_init_file
-
-# Load the theme
-if [[ $OSH_THEME ]]; then
-  _omb_module_require_theme "$OSH_THEME"
-fi
 
 if [[ $PROMPT ]]; then
   export PS1='\['$PROMPT'\]'
