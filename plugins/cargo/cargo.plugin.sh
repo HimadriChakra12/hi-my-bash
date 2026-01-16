@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # @sjplanet 2025
 
 # Set CARGO_HOME to default if not already set

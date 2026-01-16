@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #
 # The current version is based on the following upstream version:
 # https://github.com/petervanderdoes/git-flow-completion/blob/db3c032411c2d6fd897b2bfc52d15a6fc4e3bfa3/git-flow-completion.bash

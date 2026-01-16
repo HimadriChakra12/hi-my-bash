@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #
 # 2022-01-20 Koichi Murase: renamed from "themes/colours.theme.sh" to "lib/omb-prompt-colors.sh"
 

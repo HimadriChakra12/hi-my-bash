@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # Description: automatically load nvm
 #
 # @var[opt] OMB_PLUGIN_NVM_AUTO_USE enable .nvmrc autoload

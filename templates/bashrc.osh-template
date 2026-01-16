@@ -4,8 +4,8 @@ case $- in
     *) return;;
 esac
 
-# Path to your oh-my-bash installation.
-export OSH=~/.oh-my-bash
+# Path to your hi-my-bash installation.
+export OSH=~/.hi-my-bash
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -69,7 +69,7 @@ export OSH=~/.oh-my-bash
 # Would you like to use another custom folder than $OSH/custom?
 # OSH_CUSTOM=/path/to/new-custom-folder
 
-# To disable the uses of "sudo" by oh-my-bash, please set "false" to
+# To disable the uses of "sudo" by hi-my-bash, please set "false" to
 # this variable.  The default behavior for the empty value is "true".
 OMB_USE_SUDO=true
 
@@ -81,8 +81,8 @@ OMB_USE_SUDO=true
 # OMB_PROMPT_SHOW_SPACK_ENV=true  # enable
 # OMB_PROMPT_SHOW_SPACK_ENV=false # disable
 
-# Which completions would you like to load? (completions can be found in ~/.oh-my-bash/completions/*)
-# Custom completions may be added to ~/.oh-my-bash/custom/completions/
+# Which completions would you like to load? (completions can be found in ~/.hi-my-bash/completions/*)
+# Custom completions may be added to ~/.hi-my-bash/custom/completions/
 # Example format: completions=(ssh git bundler gem pip pip3)
 # Add wisely, as too many completions slow down shell startup.
 completions=(
@@ -91,16 +91,16 @@ completions=(
   ssh
 )
 
-# Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
-# Custom aliases may be added to ~/.oh-my-bash/custom/aliases/
+# Which aliases would you like to load? (aliases can be found in ~/.hi-my-bash/aliases/*)
+# Custom aliases may be added to ~/.hi-my-bash/custom/aliases/
 # Example format: aliases=(vagrant composer git-avh)
 # Add wisely, as too many aliases slow down shell startup.
 aliases=(
   general
 )
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
-# Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
+# Which plugins would you like to load? (plugins can be found in ~/.hi-my-bash/plugins/*)
+# Custom plugins may be added to ~/.hi-my-bash/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
@@ -108,8 +108,8 @@ plugins=(
   bashmarks
 )
 
-# Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
-# Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
+# Which plugins would you like to conditionally load? (plugins can be found in ~/.hi-my-bash/plugins/*)
+# Custom plugins may be added to ~/.hi-my-bash/custom/plugins/
 # Example format:
 #  if [ "$DISPLAY" ] || [ "$SSH" ]; then
 #      plugins+=(tmux-autoattach)
@@ -122,7 +122,7 @@ plugins=(
 #
 #OMB_TERM_USE_TPUT=no
 
-source "$OSH"/oh-my-bash.sh
+source "$OSH"/hi-my-bash.sh
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -143,11 +143,11 @@ source "$OSH"/oh-my-bash.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-bash libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-bash
+# Set personal aliases, overriding those provided by hi-my-bash libs,
+# plugins, and themes. Aliases can be placed here, though hi-my-bash
 # users are encouraged to define aliases within the OSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
-# alias ohmybash="mate ~/.oh-my-bash"
+# alias himadrichakra12="mate ~/.hi-my-bash"

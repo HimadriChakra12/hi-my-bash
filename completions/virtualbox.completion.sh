@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #
 # This completion setting seems to originate from the following repository:
 # https://github.com/tfmalt/bash-completion-virtualbox

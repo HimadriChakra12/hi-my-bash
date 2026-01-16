@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 # A part of this file came from bash-sensible [1].  The current version is
 # based on commit eb82f9e8.
@@ -69,7 +69,7 @@ _omb_util_add_prompt_command 'history -a'
 #   integer causes the undefined behavior in the C standard), but it is safer
 #   in typical implementations.
 #
-# See discussion on https://github.com/ohmybash/oh-my-bash/issues/586.
+# See discussion on https://github.com/himadrichakra12/hi-my-bash/issues/586.
 export HISTSIZE=$((0x7FFF7FFF))
 export HISTFILESIZE=$((0x7FFF7FFF))
 

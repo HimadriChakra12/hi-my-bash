@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 ############################---Description---###################################
 #                                                                              #
 # Summary       : A collection of handy utilities and functions for bash       #
@@ -525,7 +525,7 @@ function _omb_util_alias_delayed {
 }
 
 function _omb_util_mktemp {
-  local template=tmp.oh-my-bash.XXXXXXXXXX
+  local template=tmp.hi-my-bash.XXXXXXXXXX
   if _omb_util_command_exists mktemp; then
     mktemp -t "$template"
   else

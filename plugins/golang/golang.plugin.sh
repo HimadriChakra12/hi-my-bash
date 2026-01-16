@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 alias gob='go build'
 alias goc='go clean'

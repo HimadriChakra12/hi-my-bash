@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 function _omb_plugin_battery__upower_print_info {
   upower -i "$(upower -e | sed -n '/BAT/{p;q;}')"

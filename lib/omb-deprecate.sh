@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 function _omb_deprecate_warning {
   local level=$1 msg=$2
@@ -79,9 +79,9 @@ function _omb_deprecate_declare__init {
     __opts=$__opts:notified
     if ((_omb_version >= __ver)); then
       if [[ $__new ]]; then
-        _omb_util_print "oh-my-bash: The variable '$__old' is set but has been renamed to '$__new'.  Please use '$__new'."
+        _omb_util_print "hi-my-bash: The variable '$__old' is set but has been renamed to '$__new'.  Please use '$__new'."
       else
-        _omb_util_print "oh-my-bash: The variable '$__old' is set but has been deprecated.${__msg+ $__msg}"
+        _omb_util_print "hi-my-bash: The variable '$__old' is set but has been deprecated.${__msg+ $__msg}"
       fi >/dev/tty
     fi
     if [[ $__new && ! ${!__new+set} ]]; then
@@ -169,9 +169,9 @@ else
         local esc_old=$_omb_term_bold_brown$__old$_omb_term_reset
         local esc_new=$_omb_term_bold_navy$__new$_omb_term_reset
         if [[ $__new ]]; then
-          _omb_util_print "oh-my-bash: The variable '$esc_old' is changed but has been renamed to '$esc_new'.  Please use '$esc_new'."
+          _omb_util_print "hi-my-bash: The variable '$esc_old' is changed but has been renamed to '$esc_new'.  Please use '$esc_new'."
         else
-          _omb_util_print "oh-my-bash: The variable '$esc_old' is changed but has been deprecated.${__msg+ $__msg}"
+          _omb_util_print "hi-my-bash: The variable '$esc_old' is changed but has been deprecated.${__msg+ $__msg}"
         fi >/dev/tty
       fi
 
@@ -266,7 +266,7 @@ _omb_deprecate_msg_please_use="Please use '$_omb_term_bold_navy%s$_omb_term_rese
 #------------------------------------------------------------------------------
 # deprecate functions and variables
 
-# oh-my-bash.sh -- These functions were originally used to find
+# hi-my-bash.sh -- These functions were originally used to find
 # "fpath" directories, which are not supported by Bash.
 
 function is_plugin {

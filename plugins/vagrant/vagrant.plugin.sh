@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # Author: Enzo Arroyo <enzo@arroyof.com>
 
 # Functions

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # @chopnico 2021
 
 if [[ -d ~/.goenv ]]; then

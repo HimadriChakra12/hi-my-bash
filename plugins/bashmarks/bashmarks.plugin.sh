@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # Copyright (c) 2010, Huy Nguyen, https://everyhue.me
 # Copyright (c) 2015, Toan Nguyen, https://nntoan.github.io
 # All rights reserved.

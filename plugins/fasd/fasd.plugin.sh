@@ -1,7 +1,7 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 # Initialize fasd, without setting up the prompt hook, which
-# we want to be handled by oh-my-bash.
+# we want to be handled by hi-my-bash.
 
 function _omb_plugin_fasd_prompt_func {
   local sink=${OMB_PLUGIN_FASD_SINK:-/dev/null}

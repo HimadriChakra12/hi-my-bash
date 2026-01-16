@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #------------------------------------------------------------------------------
 # Note by OMB: This file is taken from the following version of Docker Compose
 # v1:

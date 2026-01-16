@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # Common directories functions
 
 OMB_DIRECTORIES_CD_USE_PUSHD=false

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # Outputs current branch info in prompt format
 
 _omb_module_require lib:omb-prompt-colors
@@ -12,7 +12,7 @@ _omb_deprecate_declare 20000 POST_1_7_2_GIT _omb_git_post_1_7_2 sync
 # # out this function for now.
 # function git_prompt_info {
 #   local ref
-#   if [[ $(_omb_prompt_git config --get oh-my-bash.hide-status 2>/dev/null) != 1 ]]; then
+#   if [[ $(_omb_prompt_git config --get hi-my-bash.hide-status 2>/dev/null) != 1 ]]; then
 #     ref=$(_omb_prompt_git symbolic-ref HEAD 2> /dev/null) || \
 #     ref=$(_omb_prompt_git rev-parse --short HEAD 2> /dev/null) || return 0
 #     _omb_util_print "$OSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$OSH_THEME_GIT_PROMPT_SUFFIX"
@@ -23,7 +23,7 @@ _omb_deprecate_declare 20000 POST_1_7_2_GIT _omb_git_post_1_7_2 sync
 function parse_git_dirty {
   local STATUS=
   local -a FLAGS=('--porcelain')
-  if [[ $(_omb_prompt_git config --get oh-my-bash.hide-dirty) != 1 ]]; then
+  if [[ $(_omb_prompt_git config --get hi-my-bash.hide-dirty) != 1 ]]; then
     if ((${_omb_git_post_1_7_2:=$(git_compare_version "1.7.2")} > 0)); then
       FLAGS+=('--ignore-submodules=dirty')
     fi

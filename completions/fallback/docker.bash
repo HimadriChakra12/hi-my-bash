@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # shellcheck disable=SC2016,SC2119,SC2155,SC2206,SC2207,SC2254
 #------------------------------------------------------------------------------
 # Note by OMB: This file is taken from the following version of Docker CLI:

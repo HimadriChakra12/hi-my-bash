@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #------------------------------------------------------------------------------
 # Note on copyright (2022-08-23): The aliases defined in this file seems to
 # originally come from a blog post [1].  See also the comments in lib/base.sh.
@@ -22,7 +22,7 @@
 #   -----------------------------
 
 # Preferred 'cp' implementation.  Determines the use of the option `-v' on the
-# first call Ref. https://github.com/ohmybash/oh-my-bash/issues/351
+# first call Ref. https://github.com/himadrichakra12/hi-my-bash/issues/351
 function _omb_util_alias_select_cp {
   if (tmp=$(_omb_util_mktemp); trap 'rm -f "$tmp"{,.2}' EXIT; command cp -v "$tmp" "$tmp.2" &>/dev/null); then
     _omb_command='cp -iv'

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #
 # bash completion for go tool
 # https://github.com/thomasf/go-bash-completion/blob/73c7543f2a295d27ae9bc71baa1ef1a858447eae/go-bash-completion.bash

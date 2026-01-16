@@ -31,7 +31,7 @@ function _omb_upgrade {
   # git-1.5.3 (https://github.com/git/git/commit/892c41b9 2007-06).
   if ! command git --git-dir="$OSH/.git" --work-tree="$OSH" pull --rebase --stat origin master; then
     # In case it enters the rebasing mode
-    printf '%s\n' "oh-my-bash: running 'git rebase --abort'..."
+    printf '%s\n' "hi-my-bash: running 'git rebase --abort'..."
     command git --git-dir="$OSH/.git" --work-tree="$OSH" rebase --abort
     printf "${RED}%s${NORMAL}\n" \
            'There was an error updating.' \
@@ -50,7 +50,7 @@ function _omb_upgrade {
     '\____/_/ /_/  /_/ /_/ /_/\__, /  /_.___/\__,_/____/_/ /_/ ' \
     '                        /____/                            '
   printf "${BLUE}%s\n" "Hooray! Oh My Bash has been updated and/or is at the current version."
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ohmybash/oh-my-bash"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/himadrichakra12/hi-my-bash"
   if [[ $- == *i* ]]; then
     local _omb_upgrade_reload_bashrc=1
     declare -f _omb_util_unload &>/dev/null && _omb_util_unload

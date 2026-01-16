@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 function _omb_plugin_sudo__is_inserted {
   [[ $READLINE_LINE = 'sudo '* ]]

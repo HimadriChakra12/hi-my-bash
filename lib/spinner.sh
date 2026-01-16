@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #
 # Move a process to background and track its progress in a smoothier way.
 # Could be use if $TERM not set.

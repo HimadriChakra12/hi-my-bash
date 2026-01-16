@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Note: this file is intentionally written in POSIX sh so that oh-my-bash can
+# Note: this file is intentionally written in POSIX sh so that hi-my-bash can
 # be uninstalled without bash.
 
 _omb_uninstall_confirmation() {
@@ -13,10 +13,10 @@ _omb_uninstall_confirmation() {
 }
 
 _omb_uninstall_contains_omb() {
-  command grep -qE '(source|\.)[[:space:]]+.*[/[:space:]]oh-my-bash\.sh' "$1" 2>/dev/null
+  command grep -qE '(source|\.)[[:space:]]+.*[/[:space:]]hi-my-bash\.sh' "$1" 2>/dev/null
 }
 
-# Find the latest bashrc that do not source oh-my-bash.sh
+# Find the latest bashrc that do not source hi-my-bash.sh
 _omb_uninstall_find_bashrc_original() {
   _omb_uninstall_bashrc_original=
   printf '%s\n' "Looking for original bash config..."
@@ -24,7 +24,7 @@ _omb_uninstall_find_bashrc_original() {
   _omb_uninstall_old_ifs=${IFS-}
   IFS='
 '
-  for _omb_uninstall_file in $(printf '%s\n' ~/.bashrc.omb-backup-?????????????? | sort -r) ~/.bashrc.pre-oh-my-bash; do
+  for _omb_uninstall_file in $(printf '%s\n' ~/.bashrc.omb-backup-?????????????? | sort -r) ~/.bashrc.pre-hi-my-bash; do
     [ -f "$_omb_uninstall_file" ] || [ -h "$_omb_uninstall_file" ] || continue
     _omb_uninstall_contains_omb "$_omb_uninstall_file" && continue
     _omb_uninstall_bashrc_original=$_omb_uninstall_file
@@ -44,7 +44,7 @@ _omb_uninstall_find_bashrc_original() {
   fi
 }
 
-_omb_uninstall_base_directory=${OSH:-$HOME/.oh-my-bash}
+_omb_uninstall_base_directory=${OSH:-$HOME/.hi-my-bash}
 if [ ! -d "$_omb_uninstall_base_directory" ]; then
   printf '%s\n' "Uninstall target '$_omb_uninstall_base_directory' not found."
   unset -v _omb_uninstall_base_directory
@@ -91,7 +91,7 @@ if [ -n "$_omb_uninstall_bashrc_original" ]; then
   command mv "$_omb_uninstall_bashrc_original" ~/.bashrc;
   printf '%s\n' "Your original bash config was restored. Please restart your session."
 else
-  command sed '/oh-my-bash\.sh/s/^/: #/' ~/"${_omb_uninstall_bashrc_uninstalled:-.bashrc}" >| ~/.bashrc.omb-temp && \
+  command sed '/hi-my-bash\.sh/s/^/: #/' ~/"${_omb_uninstall_bashrc_uninstalled:-.bashrc}" >| ~/.bashrc.omb-temp && \
     command mv ~/.bashrc.omb-temp ~/.bashrc
 fi
 

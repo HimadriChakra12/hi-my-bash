@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 ## This module provides the following function which can be used as "readlink
 ## -f" that can be used in any systems.  The implementation is taken from

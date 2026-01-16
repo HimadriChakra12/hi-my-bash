@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 # is x grep argument available?
 function _omb_grep_flag_available {

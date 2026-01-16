@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 ## jobs
 #setopt long_list_jobs
 

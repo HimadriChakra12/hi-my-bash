@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 # Copyright 2023 Koichi Murase.
 #
 # Helper functions for completions

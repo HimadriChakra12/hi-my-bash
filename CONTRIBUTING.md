@@ -32,7 +32,7 @@ your problem.
 
 If you find one, comment on it so we can know there are more people experiencing it.
 
-If not, look at the [Troubleshooting](https://github.com/ohmybash/oh-my-bash/wiki/Troubleshooting)
+If not, look at the [Troubleshooting](https://github.com/himadrichakra12/hi-my-bash/wiki/Troubleshooting)
 page for instructions on how to gather data to better debug your problem.
 
 Then, you can go ahead and create an issue with as much detail as you can provide.
@@ -83,7 +83,7 @@ change.
 
 You should be familiar with the basics of
 [contributing on GitHub](https://help.github.com/articles/using-pull-requests) and have a fork
-[properly set up](https://github.com/ohmybash/oh-my-bash/wiki/Contribution-Technical-Practices).
+[properly set up](https://github.com/himadrichakra12/hi-my-bash/wiki/Contribution-Technical-Practices).
 
 You MUST always create a PR with _a dedicated branch_ (i.e., a branch that is
 NOT `master`) based on the latest upstream tree.
@@ -136,9 +136,9 @@ expected image size, the image should be clipped instead of being resized and
 downscaled.
 
 When you add a new theme, please also update
-[themes/THEMES.md](https://github.com/ohmybash/oh-my-bash/blob/master/themes/THEMES.md).
+[themes/THEMES.md](https://github.com/himadrichakra12/hi-my-bash/blob/master/themes/THEMES.md).
 After your new theme is merged, the list in
-[Themes](https://github.com/ohmybash/oh-my-bash/wiki/Themes) in the wiki also
+[Themes](https://github.com/himadrichakra12/hi-my-bash/wiki/Themes) in the wiki also
 needs to be updated.
 
 ### New Plugin
@@ -149,7 +149,7 @@ it is worth including in Oh My Bash, you will have to find testers to +1 your
 PR.
 
 When you add a new plugin, please also update
-[plugins/README.md](https://github.com/ohmybash/oh-my-bash/blob/master/plugins/README.md).
+[plugins/README.md](https://github.com/himadrichakra12/hi-my-bash/blob/master/plugins/README.md).
 
 ### Copyright and responsibility
 
@@ -199,7 +199,7 @@ Initially, we haven't cared about the naming convention very much, but we now
 try to improve it.  In particular, the new codes should follow this naming
 convention.  The contributions to improve old codes are also welcome, but we
 also need to keep the backward compatibility.  See [Discussion
-#280](https://github.com/ohmybash/oh-my-bash/discussions/280) for background.
+#280](https://github.com/himadrichakra12/hi-my-bash/discussions/280) for background.
 
 The functions/aliases that are supposed to be used as interactive commands can
 have arbitrary names including short ones.
@@ -213,14 +213,14 @@ The functions that are used from the other functions have the names of the form
 * Some important functions might have the name `_omb_${funcname}` directly put under `_omb` namespace.
 
 Public global variables that can be used to configure the behavior of
-oh-my-bash have the form `OMB_*`.
+hi-my-bash have the form `OMB_*`.
 
-* The settings for the main oh-my-bash behavior have the names of the form `OMB_${config^^}`
+* The settings for the main hi-my-bash behavior have the names of the form `OMB_${config^^}`
 * The settings for the detailed behavior have the names of the form `OMB_${namespace^^}_${config^^}`
 * The settings for a specific plugin has the form `OMB_PLUGIN_${plugin_name^^}_${config^^}`
 * The settings for a specific theme has the form `OMB_THEME_${theme_name^^}_${config^^}`
 
-Internal global variables put into global variables used by oh-my-bash has the
+Internal global variables put into global variables used by hi-my-bash has the
 form `_omb_*`.
 
 * The internal variables defined by libraries has the form `_omb_${namespace}_${varname}`
@@ -243,7 +243,7 @@ to help you check whether a similar contribution to yours already exists. Please
 before making any contribution, it avoids duplicates and eases maintenance. Trust me,
 that works 90% of the time.
 
-You can also take a look at the [FAQ](https://github.com/ohmybash/oh-my-bash/wiki/FAQ)
+You can also take a look at the [FAQ](https://github.com/himadrichakra12/hi-my-bash/wiki/FAQ)
 to be sure your contribution has not already come up.
 
 If all fails, your thing has probably not been reported yet, so you can go ahead
@@ -255,5 +255,5 @@ and [create an issue](#reporting-issues) or [submit a PR](#submitting-pull-reque
 
 Very nice!! :)
 
-Please have a look at the [Volunteer](https://github.com/ohmybash/oh-my-bash/wiki/Volunteers)
+Please have a look at the [Volunteer](https://github.com/himadrichakra12/hi-my-bash/wiki/Volunteers)
 page for instructions on where to start and more.

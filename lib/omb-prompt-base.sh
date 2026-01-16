@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 
 _omb_module_require lib:omb-util
 _omb_module_require lib:omb-deprecate
@@ -113,7 +113,7 @@ function _omb_prompt_git {
 }
 
 function _omb_prompt_git_status_enabled {
-  [[ $(_omb_prompt_git config --get-regexp '^(oh-my-zsh|bash-it|oh-my-bash)\.hide-status$' |
+  [[ $(_omb_prompt_git config --get-regexp '^(oh-my-zsh|bash-it|hi-my-bash)\.hide-status$' |
     awk '$2== "1" {hide_status = 1;} END { print hide_status; }') != "1" ]]
 }
 

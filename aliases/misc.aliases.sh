@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash hi-my-bash.module
 #------------------------------------------------------------------------------
 # Note on copyright (2022-08-23): The aliases defined in this file seems to
 # originally come from a blog post [1].  See also the comments in lib/base.sh.

@@ -11,13 +11,13 @@ case $- in
 esac
 
 if [ -z "${BASH_VERSION-}" ]; then
-  printf '%s\n' 'oh-my-bash: This is not a Bash. Use OMB with Bash 3.2 or higher.' >&2
+  printf '%s\n' 'hi-my-bash: This is not a Bash. Use OMB with Bash 3.2 or higher.' >&2
   return 1
 fi
 _omb_bash_version=$((BASH_VERSINFO[0] * 10000 + BASH_VERSINFO[1] * 100 + BASH_VERSINFO[2]))
 if ((_omb_bash_version < 30200)); then
-  printf '%s\n' "oh-my-bash: OMB does not support this version of Bash ($BASH_VERSION)" >&2
-  printf '%s\n' "oh-my-bash: Use OMB with Bash 3.2 or higher" >&2
+  printf '%s\n' "hi-my-bash: OMB does not support this version of Bash ($BASH_VERSION)" >&2
+  printf '%s\n' "hi-my-bash: Use OMB with Bash 3.2 or higher" >&2
   return 1
 fi
 
@@ -37,7 +37,7 @@ fi
 if [[ ! ${OSH_CUSTOM-} ]]; then
   OSH_CUSTOM=$OSH/custom
   [[ -d $OSH_CUSTOM && -O $OSH_CUSTOM ]] ||
-    OSH_CUSTOM=${XDG_DATA_HOME:-$HOME/.local/share}/oh-my-bash/custom
+    OSH_CUSTOM=${XDG_DATA_HOME:-$HOME/.local/share}/hi-my-bash/custom
 fi
 
 # Set OSH_CACHE_DIR to the path where cache files should be created
@@ -45,7 +45,7 @@ fi
 if [[ ! ${OSH_CACHE_DIR-} ]]; then
   OSH_CACHE_DIR=$OSH/cache
   [[ -d $OSH_CACHE_DIR && -O $OSH_CACHE_DIR ]] ||
-    OSH_CACHE_DIR=${XDG_STATE_HOME:-$HOME/.local/state}/oh-my-bash/cache
+    OSH_CACHE_DIR=${XDG_STATE_HOME:-$HOME/.local/state}/hi-my-bash/cache
 fi
 
 _omb_module_loaded=
@@ -68,7 +68,7 @@ function _omb_module_require {
     alias)      locations=({"$OSH_CUSTOM","$OSH"}/aliases/"$name".aliases.{bash,sh}) ;;
     completion) locations=({"$OSH_CUSTOM","$OSH"}/completions/"$name".completion.{bash,sh}) ;;
     *)
-      printf '%s\n' "oh-my-bash (module_require): unknown module type '$type'." >&2
+      printf '%s\n' "hi-my-bash (module_require): unknown module type '$type'." >&2
       status=2
       continue ;;
     esac
@@ -82,7 +82,7 @@ function _omb_module_require {
       fi
     done
 
-    printf '%s\n' "oh-my-bash (module_require): module '$type:$name' not found." >&2
+    printf '%s\n' "hi-my-bash (module_require): module '$type:$name' not found." >&2
     status=127
   done
 
@@ -102,7 +102,7 @@ function _omb_module_require_plugin     { _omb_module_require "${@/#/plugin:}"; 
 function _omb_module_require_alias      { _omb_module_require "${@/#/alias:}"; }
 function _omb_module_require_completion { _omb_module_require "${@/#/completion:}"; }
 
-# Load all of the config files in ~/.oh-my-bash/lib that end in .sh
+# Load all of the config files in ~/.hi-my-bash/lib that end in .sh
 # TIP: Add files you don't want in git to .gitignore
 _omb_module_require_lib omb-util
 _omb_module_require_lib utils
