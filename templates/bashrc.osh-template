@@ -1,7 +1,7 @@
 # Enable the subsequent settings only in interactive sessions
 case $- in
-  *i*) ;;
-    *) return;;
+*i*) ;;
+*) return;;
 esac
 
 # Path to your hi-my-bash installation.
@@ -10,25 +10,34 @@ export OSH=~/.hi-my-bash
 OMB_USE_SUDO=true
 
 completions=(
-  git
-)
+        git
+        )
 
 # Which aliases would you like to load? (aliases can be found in ~/.hi-my-bash/aliases/*)
 # Custom aliases may be added to ~/.hi-my-bash/custom/aliases/
 # Example format: aliases=(vagrant composer git-avh)
 # Add wisely, as too many aliases slow down shell startup.
 aliases=(
-  general
-  ls
+general
+ls
 )
 
+if _omb_util_binary_exists pacman; then
+aliases=(
+pacman
+)
+else
+aliases=(
+package-manager
+)
+fi
 # Which plugins would you like to load? (plugins can be found in ~/.hi-my-bash/plugins/*)
 # Custom plugins may be added to ~/.hi-my-bash/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  bashmarks
+git
+bashmarks
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.hi-my-bash/plugins/*)
