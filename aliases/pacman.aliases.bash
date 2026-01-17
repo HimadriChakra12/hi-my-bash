@@ -26,33 +26,33 @@ if _omb_util_binary_exists pacman; then
 fi
 
 if _omb_util_binary_exists paru; then
-  alias pi="${_omb_tmp_sudo}paru -S" # Enoch Merge
-  alias ps="${_omb_tmp_sudo}paru -Q" # Enoch Search
-  alias psy="${_omb_tmp_sudo}paru -Sy" # Enoch SYNC
-  alias pr="${_omb_tmp_sudo}paru -R" # Enoch Remove
-  alias pR="${_omb_tmp_sudo}paru -Rs" # Enoch Remove with Deps
-  alias pu="${_omb_tmp_sudo}paru -Syu" # Enoch Update & Upgrade System
-  alias pI="${_omb_tmp_sudo}paru -Si" # Enoch Display Information
+  alias pi="paru -S" # Enoch Merge
+  alias ps="paru -Q" # Enoch Search
+  alias psy="paru -Sy" # Enoch SYNC
+  alias pr="paru -R" # Enoch Remove
+  alias pR="paru -Rs" # Enoch Remove with Deps
+  alias pu="paru -Syu" # Enoch Update & Upgrade System
+  alias pI="paru -Si" # Enoch Display Information
 fi
 
 if _omb_util_binary_exists pikaur; then
-  alias Pi="${_omb_tmp_sudo}pikaur -S" # Enoch Merge
-  alias Ps="${_omb_tmp_sudo}pikaur -Q" # Enoch Search
-  alias Psy="${_omb_tmp_sudo}pikaur -Sy" # Enoch SYNC
-  alias Pr="${_omb_tmp_sudo}pikaur -R" # Enoch Remove
-  alias PR="${_omb_tmp_sudo}pikaur -Rs" # Enoch Remove with Deps
-  alias Pu="${_omb_tmp_sudo}pikaur -Syu" # Enoch Update & Upgrade System
-  alias PI="${_omb_tmp_sudo}pikaur -Si" # Enoch Display Information
+  alias Pi="pikaur -S" # Enoch Merge
+  alias Ps="pikaur -Q" # Enoch Search
+  alias Psy="pikaur -Sy" # Enoch SYNC
+  alias Pr="pikaur -R" # Enoch Remove
+  alias PR="pikaur -Rs" # Enoch Remove with Deps
+  alias Pu="pikaur -Syu" # Enoch Update & Upgrade System
+  alias PI="pikaur -Si" # Enoch Display Information
 fi
 
 if _omb_util_binary_exists yay; then
-  alias yi="${_omb_tmp_sudo}yay -S" # Enoch Merge
-  alias ys="${_omb_tmp_sudo}yay -Q" # Enoch Search
-  alias ysy="${_omb_tmp_sudo}yay -Sy" # Enoch SYNC
-  alias yr="${_omb_tmp_sudo}yay -R" # Enoch Remove
-  alias yR="${_omb_tmp_sudo}yay -Rs" # Enoch Remove with Deps
-  alias yu="${_omb_tmp_sudo}yay -Syu" # Enoch Update & Upgrade System
-  alias yI="${_omb_tmp_sudo}yay -Si" # Enoch Display Information
+  alias yi="yay -S" # Enoch Merge
+  alias ys="yay -Q" # Enoch Search
+  alias ysy="yay -Sy" # Enoch SYNC
+  alias yr="yay -R" # Enoch Remove
+  alias yR="yay -Rs" # Enoch Remove with Deps
+  alias yu="yay -Syu" # Enoch Update & Upgrade System
+  alias yI="yay -Si" # Enoch Display Information
 fi
 
 unset -v _omb_tmp_sudo
