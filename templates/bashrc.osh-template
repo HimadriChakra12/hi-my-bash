@@ -20,7 +20,6 @@ ls
 pacman
 package-manager
 zoxide
-him
 )
 # Which plugins would you like to load? (plugins can be found in ~/.hi-my-bash/plugins/*)
 # Custom plugins may be added to ~/.hi-my-bash/custom/plugins/
@@ -32,6 +31,7 @@ bashmarks
 zoxide
 starship
 fzf
+him
 )
 
 
