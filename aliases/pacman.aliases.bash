@@ -56,3 +56,15 @@ if _omb_util_binary_exists yay; then
 fi
 
 unset -v _omb_tmp_sudo
+
+clean_packages(){
+    read -p "Wanna Clean Packages With config? [y/n]" $opt
+    if [[ $opt == y || $opt = yes ]]; then
+        sudo pacman -Rns $(pacman -Qdtq)
+    else
+        sudo pacman -Rs $(pacman -Qdtq)
+    fi
+    echo "Wanna Clean Caches?"
+    read -r
+    sudo pacman -Scc
+}

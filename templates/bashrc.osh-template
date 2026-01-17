@@ -19,6 +19,8 @@ general
 ls
 pacman
 package-manager
+zoxide
+him
 )
 # Which plugins would you like to load? (plugins can be found in ~/.hi-my-bash/plugins/*)
 # Custom plugins may be added to ~/.hi-my-bash/custom/plugins/
@@ -31,6 +33,8 @@ zoxide
 starship
 fzf
 )
+
+
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.hi-my-bash/plugins/*)
 # Custom plugins may be added to ~/.hi-my-bash/custom/plugins/
