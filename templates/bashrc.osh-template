@@ -4,6 +4,10 @@ case $- in
 *) return;;
 esac
 
+if command -v fastfetch >/dev/null; then
+    fastfetch
+fi
+
 # Path to your hi-my-bash installation.
 export OSH=~/.hi-my-bash
 
