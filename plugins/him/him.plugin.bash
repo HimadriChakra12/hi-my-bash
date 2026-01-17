@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 gc() {
     name="$1"
     email="$2"
