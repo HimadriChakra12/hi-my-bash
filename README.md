@@ -75,60 +75,6 @@ For example, if you want the `tmux-autoattach` plugin to only run on SSH session
 
 Most plugins (should! we're working on this) include a __README__, which documents how to use them.
 
-### Themes
-
-We'll admit it. Early in the Oh My Bash world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://github.com/himadrichakra12/hi-my-bash/wiki/Themes) on our wiki or alternatively [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) wiki.
-
-#### Selecting a Theme
-
-_The font theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one for the original maintainer of Oh My Bash._
-
-Once you find a theme that you want to use, you will need to edit the `~/.bashrc` file. You'll see an environment variable (all caps) in there that looks like:
-
-```shell
-OSH_THEME="font"
-```
-
-To use a different theme, simply change the value to match the name of your desired theme. For example:
-
-```shell
-OSH_THEME="agnoster" # (this is one of the fancy ones)
-# you might need to install a special Powerline font on your console's host for this to work
-# see https://github.com/himadrichakra12/hi-my-bash/wiki/Themes#agnoster
-```
-
-Open up a new terminal window and your prompt should look something like this:
-
-![Font theme](themes/font/font-dark.png)
-
-In case you did not find a suitable theme for your needs, please have a look
-at the wiki for [more of them](https://github.com/himadrichakra12/hi-my-bash/wiki/Themes).
-
-If you're feeling feisty, you can let the computer select one randomly for you each time you open a new terminal window.
-
-```shell
-OSH_THEME="random" # (...please let it be pie... please be some pie..)
-```
-
-If you want to randomly select a theme from a specified list, you can set the
-list in the following array:
-
-```shell
-OMB_THEME_RANDOM_CANDIDATES=("font" "powerline-light" "minimal")
-```
-
-If there are themes you don't like, you can add them to an ignored list:
-
-```shell
-OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
-```
-
-The selected theme name can be checked by the following command:
-
-```shell
-$ echo "$OMB_THEME_RANDOM_SELECTED"
-```
-
 ## Advanced Topics
 
 If you're the type that likes to get their hands dirty, these sections might resonate.
