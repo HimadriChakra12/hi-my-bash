@@ -4,12 +4,15 @@ case $- in
 *) return;;
 esac
 
+# Path to your hi-my-bash installation.
+export OSH='/home/himadri/.hi-my-bash'
+
+if [[ -f $HOME/wprfrc ]]; then
+    source $HOME/.profile
+fi
 if command -v fastfetch >/dev/null; then
     fastfetch
 fi
-
-# Path to your hi-my-bash installation.
-export OSH=~/.hi-my-bash
 
 OMB_USE_SUDO=true
 
@@ -56,6 +59,7 @@ fzf
 
 source "$OSH"/hi-my-bash.sh
 
+source "$HOME/.dotfiles/.profile"
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 
