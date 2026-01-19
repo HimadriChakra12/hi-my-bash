@@ -7,11 +7,8 @@ esac
 # Path to your hi-my-bash installation.
 export OSH='/home/himadri/.hi-my-bash'
 
-if [[ -f $HOME/wprfrc ]]; then
+if [[ -f $HOME/.profile ]]; then
     source $HOME/.profile
-fi
-if command -v fastfetch >/dev/null; then
-    fastfetch
 fi
 
 OMB_USE_SUDO=true
