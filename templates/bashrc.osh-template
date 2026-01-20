@@ -56,7 +56,6 @@ fzf
 
 source "$OSH"/hi-my-bash.sh
 
-source "$HOME/.dotfiles/.profile"
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 
